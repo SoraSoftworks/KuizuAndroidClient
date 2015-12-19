@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/space2"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/home_et_reg_login"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:gravity="left|center_vertical"
+        android:hint="Login"
+        android:background="@drawable/input_normal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/home_et_reg_email"
+        android:textColor="#000"
+        android:gravity="left|center_vertical"
+        android:hint="Email"
+        android:background="@drawable/input_normal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/home_et_reg_pwd"
+        android:textColor="#000"
+        android:gravity="left|center_vertical"
+        android:hint="Password"
+        android:background="@drawable/input_normal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/home_et_reg_phone"
+        android:textColor="#000"
+        android:gravity="left|center_vertical"
+        android:hint="Phone number"
+        android:background="@drawable/input_normal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/space" />
+
+    <Button
+        android:layout_width="209dp"
+        android:layout_height="60dp"
+        android:text="Register"
+        android:id="@+id/home_btn_register"
+        android:background="@drawable/button_normal"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

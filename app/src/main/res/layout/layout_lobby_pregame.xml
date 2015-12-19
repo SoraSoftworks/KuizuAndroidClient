@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.29" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:padding="30dp"
+        android:id="@+id/lobby_ll_container">
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:id="@+id/imageView4"
+            android:background="@drawable/icon_userfound"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="User"
+                android:id="@+id/textView2"
+                android:layout_weight="0.5"
+                android:paddingRight="0dp"
+                android:gravity="center"
+                android:paddingLeft="0dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Zied Reguaig"
+                android:id="@+id/lobby_tv_login"
+                android:layout_weight="0.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Rating"
+                android:id="@+id/textView"
+                android:layout_weight="0.5"
+                android:paddingRight="0dp"
+                android:gravity="center"
+                android:paddingLeft="0dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="1005"
+                android:id="@+id/lobby_tv_rating"
+                android:layout_weight="0.5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01" />
+
+        <Button
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:id="@+id/lobby_btn_accept"
+            android:background="@drawable/button_normal"
+            android:textColor="#000"
+            android:drawableTop="@drawable/icon_play_35"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

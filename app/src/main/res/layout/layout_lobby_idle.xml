@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/lobby_btn_joinqueue"
+            android:background="@drawable/button_icon"
+            android:textColor="#000"
+            android:drawableTop="@drawable/joystick_35x35"
+            android:layout_weight="0.2"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lobby_btn_listusers"
+            android:background="@drawable/button_icon"
+            android:textColor="#000"
+            android:drawableTop="@drawable/conference_call_35x35"
+            android:layout_weight="0.2"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lobby_btn_matchhistory"
+            android:background="@drawable/button_icon"
+            android:textColor="#000"
+            android:drawableTop="@drawable/clock_1_35x35"
+            android:layout_weight="0.2"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lobby_btn_settings"
+            android:background="@drawable/button_icon"
+            android:textColor="#000"
+            android:drawableTop="@drawable/services_35x35"
+            android:layout_weight="0.2"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lobby_btn_quit"
+            android:background="@drawable/button_icon"
+            android:textColor="#000"
+            android:drawableTop="@drawable/close_window_35x35"
+            android:layout_weight="0.2"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lobby_iv_logo"
+            android:layout_weight="1"
+            android:src="@drawable/logo_200"
+            android:layout_gravity="center" />
+
+        <eliteheberg.sora.org.kuizu.ProgressWheel
+            android:id="@+id/lobby_pg_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            ProgressWheel:pwText="Searching for an opponent.."
+            ProgressWheel:pwTextColor="#222"
+            ProgressWheel:pwTextSize="14sp"
+            ProgressWheel:pwRimColor="#e0e0e0"
+            ProgressWheel:pwBarLength="60dp"
+            ProgressWheel:pwBarColor="#000"
+            ProgressWheel:pwBarWidth="5dp"
+            ProgressWheel:pwRimWidth="2dp"
+            android:indeterminate="false"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lobby_btn_about"
+            android:background="@drawable/button_icon"
+            android:textColor="#000"
+            android:drawableTop="@drawable/info_35x35"
+            android:layout_weight="0.2"
+            android:elegantTextHeight="true" />
+    </LinearLayout>
+
+</LinearLayout>

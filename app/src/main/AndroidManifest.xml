@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eliteheberg.sora.org.kuizu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="eliteheberg.sora.org.kuizu.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="eliteheberg.sora.org.kuizu.LobbyActivity" />
+        <activity android:name="eliteheberg.sora.org.kuizu.GameActivity" />
+        <activity android:name="eliteheberg.sora.org.kuizu.ListUsersActivity" />
+        <activity android:name="eliteheberg.sora.org.kuizu.MatchHistoryActivity" />
+        <activity android:name="eliteheberg.sora.org.kuizu.SettingsActivity" />
+        <activity android:name="eliteheberg.sora.org.kuizu.ResultActivity" />
+        <activity android:name="eliteheberg.sora.org.kuizu.AboutActivity"></activity>
+    </application>
+
+</manifest>
